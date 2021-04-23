@@ -13,8 +13,6 @@
   },
   "scripts": {
     "serve": "node index",
-    "start": "node index",
-    "webpack":"build",
-    "heroku-postbuild":"webpack --config webpack.config.prod.js"
+    "start": "node index"
   }
 }
