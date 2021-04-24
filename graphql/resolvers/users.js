@@ -1,14 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const {UserInputError} = require('apollo-server');
-const cloudinary = require('cloudinary');
-
-cloudinary.config({
-    cloud_name: process.env.CLOUD_NAME,
-    api_key:process.env.API_KEY,
-    api_secret:process.env.SECRET_KEY
-})
-
 
 const {validateRegisterInput , validateLoginInput} = require('../../util/validators')
 const { SECRET_KEY } = require('../../config');
